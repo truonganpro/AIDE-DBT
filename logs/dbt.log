@@ -1,0 +1,62 @@
+[0m20:44:43.863068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056b19f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066361a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106635a80>]}
+
+
+============================== 20:44:43.865547 | 7f4cd7fc-56af-4e33-879d-903a5adde0db ==============================
+[0m20:44:43.865547 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m20:44:43.865970 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'empty': 'None', 'profiles_dir': './', 'target_path': 'None', 'log_path': 'logs', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'write_json': 'True', 'printer_width': '80', 'no_print': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'version_check': 'True', 'introspect': 'True', 'invocation_command': 'dbt init --profiles-dir ./', 'log_format': 'default', 'debug': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True'}
+[0m20:47:42.669146 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.10/site-packages/dbt/include/starter_project
+[0m20:47:42.684250 [info ] [MainThread]: 
+Your new dbt project "brazillian_ecom" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:47:42.685109 [info ] [MainThread]: Setting up your profile.
+[0m20:54:21.353295 [info ] [MainThread]: Profile brazillian_ecom written to profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:54:21.375902 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 577.53705, "process_user_time": 0.680917, "process_kernel_time": 0.205266, "process_mem_max_rss": "99893248", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m20:54:21.377385 [debug] [MainThread]: Command `dbt init` succeeded at 20:54:21.377140 after 577.54 seconds
+[0m20:54:21.378460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056b19f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107069840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106634d00>]}
+[0m20:54:21.379695 [debug] [MainThread]: Flushing usage events
+[0m20:54:23.038375 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:21:41.350688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105915b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10720a260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107209b40>]}
+
+
+============================== 17:21:41.352556 | fd56be65-1b0e-4aba-a4c0-81934501d168 ==============================
+[0m17:21:41.352556 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m17:21:41.352954 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'use_colors': 'True', 'profiles_dir': '/Users/truongan/PycharmProjects/AIDE-DBT', 'use_experimental_parser': 'False', 'warn_error': 'None', 'log_format': 'default', 'partial_parse': 'True', 'version_check': 'True', 'quiet': 'False', 'static_parser': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'log_path': 'logs', 'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'fail_fast': 'False'}
+[0m17:21:41.353458 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/truongan/PycharmProjects/AIDE-DBT/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:21:41.354270 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.038967043, "process_user_time": 0.579416, "process_kernel_time": 0.094109, "process_mem_max_rss": "98336768", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:21:41.354580 [debug] [MainThread]: Command `dbt deps` failed at 17:21:41.354527 after 0.04 seconds
+[0m17:21:41.354776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105915b40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107209990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10720b7c0>]}
+[0m17:21:41.354958 [debug] [MainThread]: Flushing usage events
+[0m17:21:42.403650 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:44:41.543971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d11bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b8e1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b8f430>]}
+
+
+============================== 17:44:41.545663 | f93db335-6098-4f9b-bad5-7a384893fd6d ==============================
+[0m17:44:41.545663 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m17:44:41.546030 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'profiles_dir': '/Users/truongan/PycharmProjects/AIDE-DBT', 'log_format': 'default', 'static_parser': 'True', 'quiet': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --models sales_values_by_category', 'target_path': 'None', 'use_experimental_parser': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'printer_width': '80', 'fail_fast': 'False', 'introspect': 'True', 'empty': 'False', 'use_colors': 'True', 'no_print': 'None', 'debug': 'False', 'log_cache_events': 'False'}
+[0m17:44:41.546395 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/truongan/PycharmProjects/AIDE-DBT/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:44:41.547964 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.035212457, "process_user_time": 0.568867, "process_kernel_time": 0.096614, "process_mem_max_rss": "98156544", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:44:41.548318 [debug] [MainThread]: Command `dbt run` failed at 17:44:41.548262 after 0.04 seconds
+[0m17:44:41.548526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d11bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b8f070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b8c220>]}
+[0m17:44:41.548723 [debug] [MainThread]: Flushing usage events
+[0m17:44:42.590654 [debug] [MainThread]: An error was encountered while trying to flush usage events
